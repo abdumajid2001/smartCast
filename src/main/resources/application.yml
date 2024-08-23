@@ -28,7 +28,15 @@ application:
 
 logging:
   level:
-    org.zalando.logbook: TRACE
+    org:
+    springframework:
+      security: DEBUG
+      web: DEBUG
+      data: DEBUG
+      hibernate: DEBUG
+      jpa: DEBUG
+      sql: DEBUG
+      jwt: DEBUG
 
 
 baseUrl: http://localhost:8081
